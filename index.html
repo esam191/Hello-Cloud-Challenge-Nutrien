@@ -57,7 +57,7 @@
         </div>
     </section>  
     
-    <script>
+    <script type="text/javascript">
 
         function sendMessage() {
             
@@ -90,9 +90,11 @@
             }
             };
             
-            xhr.open("POST", Url);
+            xhr.open("POST", cloudApiUrl, false);
             xhr.send(jsonString);
-
+            document.getElementById("email").value = '';
+            document.getElementById("subject").value = '';
+            document.getElementById("message").value = '';
         }
 
 
