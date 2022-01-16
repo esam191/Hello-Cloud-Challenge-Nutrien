@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&family=Roboto:wght@400;500;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: #023312;
+}
+header{
+    position: relative;
+    top: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+header .nav-bar a{
+    font-weight: 500;
+    padding: 3px 30px;
+    transition: 0.3s;
+    font-size: 20px;
+    color: rgb(170, 200, 240);
+    text-decoration: none;
+    border-radius: 2px;
+}
+header .nav-bar a:hover{
+    background: #0066cc;
+    font-size: 25px;
+}
+header .logo{
+	width: 70px;
+}
+.content{
+    color: rgb(170, 200, 240);
+    max-width: 600px;
+    width: 50%;
+    margin: 30px auto;
+}
+.content .info h1{
+    color: rgb(170, 200, 240);
+    font-size: 60px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 8px;
+}
+.content .info p {
+    font-size: 25px;
+    color: rgb(170, 200, 240);
+    margin-bottom: 20px;
+}
+.content .icons {
+    margin-bottom: 20%;
+}
+.content .icons a{
+    font-size: 70px;
+    color: rgb(170, 200, 240); 
+}
+.content .icons a:not(:last-child){
+    margin-right: 30px;
+}
+.content .icons a:hover{
+    font-size: 73px;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: white;
+  }
+  
+  .sendbtn {
+    background-color: #0066cc;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    opacity: 0.9;
+    margin-bottom: 10%;
+  }
+  
+  .sendbtn:hover {
+    opacity:1;
+  }
+
+@media (max-width:1060px){ 
+    header .nav-bar a{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .content .info h1{
+        font-size: 90px;
+    }
+    .content .info p{
+        font-size: 23px;
+    }
+}
+@media (max-width:970px){
+    .content .info p{
+        font-size: 21px;
+    }
+    .content .info h1{
+        font-size: 80px;
+    }
+    header .nav-bar a{
+        font-size: 17px;
+    }
+}
+
