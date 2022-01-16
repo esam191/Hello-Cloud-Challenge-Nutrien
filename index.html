@@ -36,7 +36,7 @@
 		        </div>
             </div>
             <div>
-                <form>
+                <form method="POST" action="https://0tyich7lc5.execute-api.us-east-1.amazonaws.com/prod/message">
                     <div>
                       <h1>Feedback Form</h1><br>
                       <p>Please feel free to send any feedback/questions you have on this web app.</p><br><br>
@@ -50,14 +50,14 @@
                       <label for="message"><b>Message</b></label>
                       <input type="text" placeholder="Write Message" name="message" id="msg" required>
                       
-                      <button type="submit" class="sendbtn" onclick="sendMessage()">Send Mesage</button>
+                      <button type="submit" class="sendbtn">Send Mesage</button>
                     </div>
                   </form>
             </div>
         </div>
     </section>  
     
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
 
         function sendMessage() {
             
@@ -98,6 +98,6 @@
         }
 
 
-    </script>
+    </script> -->
 </body>
 </html>
