@@ -9,7 +9,8 @@
     <title>Nutrien-Cloud-Challenge-Esam</title>
 </head>
 <body >
-    <section style="background-image: url(images/blue.jpg);">
+    <!-- <section style="background-image: url(images/blue.jpg);"> -->
+        <section>
         <header>
             <a href="index.html"><img src="images/logo.png" class="logo"></a>
             <div class="nav-bar">
@@ -21,22 +22,21 @@
                 <p>TTDP Hello Cloud Challenge - Esam Uddin</p>
                 <h1>Hello Cloud!</h1>
                 </br>
-                <p> I'm a final year software engineering student studying in Ontario Tech University.
-                    I'm passionate about creating software that makes a real impact.
-                </p>
-                </br>
-                <p>
-                I've developed many course projects as well as personal projects. You can check them out
-                    on the links at the top.</p>
-                </br>
-                <p>I'm always looking for exciting opportunities so feel free to connect with me.</p>
-                <div class="icons">
-                    <a href="https://github.com/esam191"><i class="fa fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/esam-uddin/"><i class="fa fa-linkedin"></i></a>
-		        </div>
+                <div class="music">
+                <p>Feel free to listen to some <br> music while you're here!</p>
+                <img src="images/play.jpg" height= "100px" width = "100px" id="play"><br><br>
+                </div>
+                <p><b>Steps Undertaken to Build App:</b></p></br>
+                <p> 1 - Built simple web app: hello cloud app with music feature + email form submission feature</p></br>
+                <p> 2 - Integrated static web hosting: used AWS Amplify to host static web resources like HTML, CSS, and image files</p></br>
+                <p> 3 - Built serverless backend: created lambda function to send email upon form submission using Amazon SES</p></br>
+                <p> 4 - Deployed a RESTful API: used Amazon API Gateway to make use of the Lambda function as a RESTful API
+                </p></br>
+                <p> <b>Solution Architecture Diagram</b></p></br>
+                <img src="images/solution_architecture.JPG" height= "300px" width= "600px"><br>
             </div>
             <div>
-                <form method="POST" action="https://0tyich7lc5.execute-api.us-east-1.amazonaws.com/prod/message">
+                <br><br><form method="POST" action="https://0tyich7lc5.execute-api.us-east-1.amazonaws.com/prod/message">
                     <div>
                       <h1>Feedback Form</h1><br>
                       <p>Please feel free to send any feedback/questions you have on this web app.</p><br><br>
@@ -54,8 +54,32 @@
                     </div>
                   </form>
             </div>
+            </br>
+            <p>I'm always looking for exciting opportunities so feel free to connect with me.</p>
+            <div class="icons">
+                <a href="https://github.com/esam191"><i class="fa fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/esam-uddin/"><i class="fa fa-linkedin"></i></a>
+            </div>
         </div>
+        <audio id="song">
+            <source src="images/music.mp3" type="audio/mp3">
+        </audio>
     </section>  
+
+    <script>
+        var song = document.getElementById("song");
+        var icon = document.getElementById("play");
+
+        icon.onclick = function(){
+            if(song.paused){
+                song.play();
+                icon.src = "images/pause.jpg";
+            } else {
+                song.pause();
+                icon.src = "images/play.jpg";
+            }
+        }
+    </script>
     
     <!-- <script type="text/javascript">
 

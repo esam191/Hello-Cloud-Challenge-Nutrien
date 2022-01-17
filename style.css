@@ -13,7 +13,7 @@ section{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    background-color: #023312;
+    background-color: #004d4d
 }
 header{
     position: relative;
@@ -62,7 +62,7 @@ header .logo{
     margin-bottom: 20px;
 }
 .content .icons {
-    margin-bottom: 20%;
+    margin-bottom: 5%;
 }
 .content .icons a{
     font-size: 70px;
@@ -105,7 +105,7 @@ input[type=text] {
         margin-right: 20px;
     }
     .content .info h1{
-        font-size: 90px;
+        font-size: 80px;
     }
     .content .info p{
         font-size: 23px;
@@ -116,10 +116,15 @@ input[type=text] {
         font-size: 21px;
     }
     .content .info h1{
-        font-size: 80px;
+        font-size: 70px;
     }
     header .nav-bar a{
         font-size: 17px;
     }
 }
-
+#play{
+    cursor: pointer;
+}
+img{
+    max-width: 100%;
+}
