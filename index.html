@@ -32,6 +32,7 @@
                 <p> 3 - Built serverless backend: created lambda function to send email upon form submission using Amazon SES</p></br>
                 <p> 4 - Deployed a RESTful API: used Amazon API Gateway to make use of the Lambda function as a RESTful API
                 </p></br>
+                <p> <b>AWS Cloud Services Utilized:</b><br><br> AWS Amplify, Lambda, Amazon Simple Email Service, Amazon API Gateway, IAM</p></br>
                 <p> <b>Solution Architecture Diagram</b></p></br>
                 <img src="images/solution_architecture.JPG" height= "300px" width= "600px"><br>
             </div>
@@ -80,48 +81,6 @@
             }
         }
     </script>
-    
-    <!-- <script type="text/javascript">
 
-        function sendMessage() {
-            
-            var cloudApiUrl = "https://0tyich7lc5.execute-api.us-east-1.amazonaws.com/prod/message"
-            var email = document.getElementById("email").value;
-            var subject = document.getElementById("subject").value;
-            var message = document.getElementById("message").value;
-            
-            var items = {
-                "email": email,
-                "subject": subject,
-                "message": message
-            };
-
-            var jsonString = JSON.stringlify(items);
-            var xhr = new XMLHttpRequest();
-            
-            xhr.onreadystatechange = function () {
-            
-            if(xhr.readyState === XMLHttpRequest.DONE) {
-                var status = xhr.status;
-                var readyState = xhr.readyState;
-                if (status == 200 && readyState == 4) {
-                // The request has been completed successfully
-                alert(xhr.responseText);
-                //console.log(xhr.responseText);
-                } else {
-                    console.log("Error with submission!");
-                }
-            }
-            };
-            
-            xhr.open("POST", cloudApiUrl, false);
-            xhr.send(jsonString);
-            document.getElementById("email").value = '';
-            document.getElementById("subject").value = '';
-            document.getElementById("message").value = '';
-        }
-
-
-    </script> -->
 </body>
 </html>
